@@ -19,7 +19,7 @@ console.log(typeof bignumber);*/
 let fname=" Darshan ";
 let lname =" thakur ";
 console.log(`Hello my  first name is ${fname} and last name is  ${lname}`);
-const test= new String('Darshan')
+const test= new String('Darshan-Thakur-Mandi')
 console.log(test[0]);
 console.log(test.length);
 console.log(test.toUpperCase());
@@ -29,4 +29,8 @@ console.log(test.indexOf('s'));
 console.log(test.substring(0,4));
 console.log(test.trim());
 
-console.log(test.slice(-7,2));
+console.log(test.slice(-9,3));
+const url="https://darshan.com/darshan%20thakur"
+console.log(url.replace('%20','-'));
+console.log(test.split('-'));
+
