@@ -24,6 +24,7 @@ map.set('IN',"INDIA")//WILL NOT INSERT DUPLICATE VALUE IN MAP
     
  }
  // checking for object  for of loop
+
 /*const myobject={
     'game1':"cricket",
     'game2':'hockey'
@@ -33,3 +34,42 @@ for (const [key, value] of myobject) {
     console.log(key,'',value);
 }
     object is not iteratble in  forof loop*/
+// foreach loop  used with array
+const state=["Himachal","Punjab","Haryana"]
+state.forEach( function(item){
+    console.log(item);
+    
+})
+// with arrow function
+/*state.forEach( (val)=>{
+    console.log(val);
+    
+})
+function printme(item){
+   console.log(item) 
+}
+state.forEach(printme)*/
+state.forEach( (item,index,arr)=>{
+    console.log(item,index,arr);
+    
+
+})
+
+const progm=[
+    {
+        lang:'Java',
+        filenm:'java'
+    },
+    {
+        lang:"javascript",
+        filenm:'js'
+    },
+    {
+        lang:"phyton",
+        filenm:'py'
+    }
+]
+progm.forEach( (item,index,arr)=>{
+    console.log(item.lang,item.filenm);
+    
+})
